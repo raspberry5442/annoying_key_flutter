@@ -16,7 +16,7 @@ However, the key parameter is used when you need to uniquely identify and track 
 In the example from the video, when you add key properties to stateful widgets and press the button to swap the widgets, the row widgets seem to stay the same as before, but Flutter actually checks if the type of the widgets is the same or not. However, the key of the color block element doesn't match the key of the corresponding color block widget. As a result, Flutter deactivates those elements and their state transitions to non-matched children in the widget tree.
 
 Then, Flutter looks through the non-matched children for an element with the corresponding key. When it finds a match, it updates its reference to the corresponding widget. This way, the swapping of color blocks is realized.
-![keyparameter](https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/keyparameter.gif)
+https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/keyparameter.gif
 
 ### the position of key property
 
