@@ -7,9 +7,9 @@
 <img src="https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/swap.gif" alt="swap" width=150 height="334">
 
 ## Key Points
-- generate random colors🔗: [[normal_class/Color|Color]]
+- generate random colors🔗: [About Color class](https://github.com/raspberry5442/annoying_key_flutter/blob/main/Notes/key%20parameter.md)
 - use `initState` method to initialize variables
-- key parameter: 🔗: [[key parameter]]
+- key parameter: 🔗: [key parameter](https://github.com/raspberry5442/annoying_key_flutter/blob/main/Notes/key%20parameter.md)
   - Why you have to use key parameter?
   - Which Key class to use?
   - Where to use?
