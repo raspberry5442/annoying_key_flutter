@@ -1,6 +1,7 @@
 # key_parameter_example_flutter
 
 ## Description
+- An example Flutter project and accompanying notes exploring key parameters in Flutter. The project's functionality includes swapping two color blocks by pressing the floating action button.
 - Some noteworthy matters have been written as comments in the code.
 - The main purpose of this project is to understand how the key parameter works in conjunction with Stateful widgets, specifically how it enables the swapping of color block positions.
 ## Display Effects
