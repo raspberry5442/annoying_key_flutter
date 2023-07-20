@@ -16,20 +16,18 @@ However, the key parameter is used when you need to uniquely identify and track 
 In the example from the video, when you add key properties to stateful widgets and press the button to swap the widgets, the row widgets seem to stay the same as before, but Flutter actually checks if the type of the widgets is the same or not. However, the key of the color block element doesn't match the key of the corresponding color block widget. As a result, Flutter deactivates those elements and their state transitions to non-matched children in the widget tree.
 
 Then, Flutter looks through the non-matched children for an element with the corresponding key. When it finds a match, it updates its reference to the corresponding widget. This way, the swapping of color blocks is realized.
-https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/keyparameter.gif
+![keyparameter](https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/keyparameter.gif)
 
 ### the position of key property
 
 Specify a key at **the top of the widget subtree** that you need to preserve. A stateful widget which hold a state doesn't means that it should keep a key property. The video explains why.
 
 ## which Key widget to use?
-
+![Key_Class_Flutter.drawio](https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/Key_Class_Flutter.drawio.png)
 ### LocalKey
 It is commly used when you need to associate a key with a widget but do not need to access it from outside the subtree.
 #### ObjectKey
 For example, you have an address book app that listed information about each user. Any of the individual fields, like a first name or a birthday, might be the same as another entry, but the combination is unique. In this scenario, an ObjectKey is probably most appropriate. ![image-20230720210208731](https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/image-20230720210208731.png)
-
-
 
 #### UniqueKey
 If you have multiple widgets in your collection with the same value, or if you want to really ensure that each widget is distinct from all others, you can use the UniqueKey. In the example project of the video, it used the UniqueKey to identify the container widget beacause the widget didn't have any other constant data and we don't know what the color will be until we construct the widget. 
@@ -47,4 +45,3 @@ GlobalKey has two uses. 1️⃣It allow widgets to change parents anywhere in th
 #### GlobalObjectKey
 #### LableGlobalKey
 
-![Key_Class_Flutter.drawio](https://zheyu-notepic.oss-cn-beijing.aliyuncs.com/Upside/Key_Class_Flutter.drawio.png)
